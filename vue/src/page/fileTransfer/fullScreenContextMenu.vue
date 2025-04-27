@@ -299,6 +299,7 @@ const tagAlphabet = computed(() => {
                   </a-sub-menu>
                 </template>
                 <a-menu-item key="send2BatchDownload">{{ $t('sendToBatchDownload') }}</a-menu-item>
+                <a-menu-item key="openWithDefaultApp">{{ $t('openWithDefaultApp') }}</a-menu-item>
                 <a-sub-menu key="copy2target" :title="$t('copyTo')">
                   <a-menu-item v-for="path in global.quickMovePaths" :key="`copy-to-${path.dir}`">{{ path.zh }}
                   </a-menu-item>
